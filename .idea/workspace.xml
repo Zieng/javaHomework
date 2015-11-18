@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6d85c5c-8d0e-4620-ada8-1194e00517a7" name="Default" comment="" />
+    <list default="true" id="a6d85c5c-8d0e-4620-ada8-1194e00517a7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Draft/Draft.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/DrawingBoard.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyLine.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyOval.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyRectangle.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyText.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Draft/src/TestPaintComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="JavaHomework.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,7 +35,105 @@
     <favorites_list name="JavaHomework" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="DrawingBoard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#DrawingBoard#0" expanded="true" />
+                <element signature="e#1022#1030#0" expanded="true" />
+                <element signature="e#1031#1036#0" expanded="true" />
+                <element signature="e#1083#1089#0" expanded="true" />
+                <element signature="e#1090#1095#0" expanded="true" />
+                <element signature="e#1147#1158#0" expanded="true" />
+                <element signature="e#1159#1164#0" expanded="true" />
+                <element signature="e#1211#1220#0" expanded="true" />
+                <element signature="e#1221#1226#0" expanded="true" />
+                <element signature="e#1273#1279#0" expanded="true" />
+                <element signature="e#1280#1285#0" expanded="true" />
+                <element signature="e#1293#1399#0" expanded="true" />
+                <element signature="e#1969#1972#0" expanded="true" />
+                <element signature="e#1973#1976#0" expanded="true" />
+                <element signature="e#2081#2084#0" expanded="true" />
+                <element signature="e#2085#2088#0" expanded="true" />
+                <element signature="e#2119#2122#0" expanded="true" />
+                <element signature="e#2123#2126#0" expanded="true" />
+                <element signature="e#2233#2234#0" expanded="true" />
+                <element signature="e#2732#2733#0" expanded="true" />
+                <element signature="e#2734#2735#0" expanded="true" />
+                <element signature="class#3442:3676" expanded="true" />
+                <element signature="method#actionPerformed#0;class#3442:3676" expanded="true" />
+                <element signature="class#3718:4002" expanded="true" />
+                <element signature="method#actionPerformed#0;class#3718:4002" expanded="true" />
+                <element signature="class#4044:4329" expanded="true" />
+                <element signature="method#actionPerformed#0;class#4044:4329" expanded="true" />
+                <element signature="class#4376:4670" expanded="true" />
+                <element signature="method#actionPerformed#0;class#4376:4670" expanded="true" />
+                <element signature="e#5048#5049#0" expanded="true" />
+                <element signature="e#5050#5051#0" expanded="true" />
+                <element signature="e#5052#5053#0" expanded="true" />
+                <element signature="e#5054#5055#0" expanded="true" />
+                <element signature="e#5169#5170#0" expanded="true" />
+                <element signature="e#5758#5763#0" expanded="true" />
+                <element signature="e#6113#6114#0" expanded="true" />
+                <element signature="e#6225#6226#0" expanded="true" />
+                <element signature="e#6269#6270#0" expanded="true" />
+                <element signature="e#6320#6321#0" expanded="true" />
+                <element signature="e#6372#6373#0" expanded="true" />
+                <marker date="1447856900000" expanded="true" signature="2259:2521" placeholder="..." />
+                <marker date="1447856900000" expanded="true" signature="2546:2649" placeholder="..." />
+                <marker date="1447856900000" expanded="true" signature="2683:3148" placeholder="..." />
+                <marker date="1447856900000" expanded="true" signature="3194:5340" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CanvasPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="class#DrawMode#0;class#CanvasPanel#0" expanded="true" />
+                <element signature="class#1045:2480" expanded="true" />
+                <element signature="method#mouseClicked#0;class#1045:2480" expanded="true" />
+                <element signature="method#mousePressed#0;class#1045:2480" expanded="true" />
+                <element signature="e#2207#2208#0" expanded="true" />
+                <element signature="e#2264#2265#0" expanded="true" />
+                <element signature="method#mouseEntered#0;class#1045:2480" expanded="true" />
+                <element signature="method#mouseExited#0;class#1045:2480" expanded="true" />
+                <element signature="method#paintComponent#0;class#CanvasPanel#0" expanded="true" />
+                <element signature="method#check_focus#0;class#CanvasPanel#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCanvasPanel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4951857">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyText.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyText.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -29,6 +141,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -48,6 +163,14 @@
         <option value="$PROJECT_DIR$/JudgeHomework/src/Calculator04.java" />
         <option value="$PROJECT_DIR$/JudgeHomework/src/Calculator05.java" />
         <option value="$PROJECT_DIR$/Calculator/src/Calculator.java" />
+        <option value="$PROJECT_DIR$/Draft/src/TestPaintComponent.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyText.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyLine.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyRectangle.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyOval.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java" />
       </list>
     </option>
   </component>
@@ -58,23 +181,25 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
+  </component>
   <component name="NamedScopeManager">
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1680" />
     <option name="height" value="1023" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -90,8 +215,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -120,7 +243,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
+              <option name="myItemId" value="DrawingBoard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -134,7 +257,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Calculator" />
+              <option name="myItemId" value="DrawingBoard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -142,64 +265,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaHomework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaHomework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Draft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaHomework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaHomework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Draft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestPaintComponent.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Calculator (1)">
-    <configuration default="false" name="Calculator03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Calculator03" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JudgeHomework" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Calculator04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Calculator04" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JudgeHomework" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Calculator05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Calculator05" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JudgeHomework" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.TestCanvasPanel">
     <configuration default="false" name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Calculator" />
@@ -227,6 +343,36 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Calculator" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DrawingBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="DrawingBoard" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DrawingBoard" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestPaintComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestPaintComponent" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Draft" />
       <envs />
       <method />
     </configuration>
@@ -377,20 +523,34 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="false" name="TestCanvasPanel" type="Application" factoryName="Application" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestCanvasPanel" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DrawingBoard" />
+      <envs />
+      <method />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Calculator03" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Calculator04" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Calculator05" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Calculator" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Calculator (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Application.TestCanvasPanel" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Calculator" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Calculator (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Application.DrawingBoard" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TestPaintComponent" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Calculator (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Calculator" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Calculator05" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Calculator04" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Calculator03" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.DrawingBoard" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestPaintComponent" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Calculator (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -408,33 +568,58 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="1023" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15934066" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18904404" sideWeight="0.509768" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.495116" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39473686" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24053724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18904404" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18904404" sideWeight="0.509768" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.495116" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24053724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18904404" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -448,7 +633,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -456,11 +643,97 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#DrawingBoard#0" expanded="true" />
+            <element signature="e#1022#1030#0" expanded="true" />
+            <element signature="e#1031#1036#0" expanded="true" />
+            <element signature="e#1083#1089#0" expanded="true" />
+            <element signature="e#1090#1095#0" expanded="true" />
+            <element signature="e#1147#1158#0" expanded="true" />
+            <element signature="e#1159#1164#0" expanded="true" />
+            <element signature="e#1211#1220#0" expanded="true" />
+            <element signature="e#1221#1226#0" expanded="true" />
+            <element signature="e#1273#1279#0" expanded="true" />
+            <element signature="e#1280#1285#0" expanded="true" />
+            <element signature="e#1293#1399#0" expanded="true" />
+            <element signature="e#1969#1972#0" expanded="true" />
+            <element signature="e#1973#1976#0" expanded="true" />
+            <element signature="e#2081#2084#0" expanded="true" />
+            <element signature="e#2085#2088#0" expanded="true" />
+            <element signature="e#2119#2122#0" expanded="true" />
+            <element signature="e#2123#2126#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
+            <element signature="class#3442:3676" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3442:3676" expanded="true" />
+            <element signature="class#3718:4002" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3718:4002" expanded="true" />
+            <element signature="class#4044:4329" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4044:4329" expanded="true" />
+            <element signature="class#4376:4670" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4376:4670" expanded="true" />
+            <element signature="e#5048#5049#0" expanded="true" />
+            <element signature="e#5050#5051#0" expanded="true" />
+            <element signature="e#5052#5053#0" expanded="true" />
+            <element signature="e#5054#5055#0" expanded="true" />
+            <element signature="e#5169#5170#0" expanded="true" />
+            <element signature="e#5758#5763#0" expanded="true" />
+            <element signature="e#6113#6114#0" expanded="true" />
+            <element signature="e#6225#6226#0" expanded="true" />
+            <element signature="e#6269#6270#0" expanded="true" />
+            <element signature="e#6320#6321#0" expanded="true" />
+            <element signature="e#6372#6373#0" expanded="true" />
+            <marker date="1447856900000" expanded="true" signature="2259:2521" placeholder="..." />
+            <marker date="1447856900000" expanded="true" signature="2546:2649" placeholder="..." />
+            <marker date="1447856900000" expanded="true" signature="2683:3148" placeholder="..." />
+            <marker date="1447856900000" expanded="true" signature="3194:5340" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="class#DrawMode#0;class#CanvasPanel#0" expanded="true" />
+            <element signature="class#1045:2480" expanded="true" />
+            <element signature="method#mouseClicked#0;class#1045:2480" expanded="true" />
+            <element signature="method#mousePressed#0;class#1045:2480" expanded="true" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="method#mouseEntered#0;class#1045:2480" expanded="true" />
+            <element signature="method#mouseExited#0;class#1045:2480" expanded="true" />
+            <element signature="method#paintComponent#0;class#CanvasPanel#0" expanded="true" />
+            <element signature="method#check_focus#0;class#CanvasPanel#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/src/TestPaintComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#558#560#0" expanded="false" />
+            <element signature="e#567#569#0" expanded="false" />
+            <element signature="e#570#572#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#NewPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TechSupport/src/TechSupport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -468,11 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Calculator01#0" expanded="true" />
-            <element signature="method#main#0;class#Calculator01#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -480,10 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -491,13 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="138" column="41" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Calculator03#0;class#Calculator03#0" expanded="true" />
-            <element signature="method#calculate#0;class#Calculator03#0" expanded="true" />
-            <element signature="method#compare#0;class#Calculator03#0" expanded="true" />
-            <element signature="method#getResult#0;class#Calculator03#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,18 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Calculator04#0" expanded="true" />
-            <element signature="method#cal#0;class#Calculator04#0" expanded="true" />
-            <element signature="method#cacu#0;class#Calculator04#0" expanded="true" />
-            <element signature="e#1335#1392#0" expanded="true" />
-            <element signature="e#4050#4088#0" expanded="true" />
-            <element signature="method#main#0;class#Calculator04#0" expanded="true" />
-            <element signature="e#5979#6033#0" expanded="true" />
-            <element signature="e#6313#6340#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -524,14 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Calculator05#0" expanded="true" />
-            <element signature="method#DoTimeMul#0;class#Calculator05#0" expanded="true" />
-            <element signature="method#getnum#0;class#Calculator05#0" expanded="true" />
-            <element signature="method#DoCalculation#0;class#Calculator05#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -547,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -555,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -563,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,13 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="138" column="41" selection-start-line="138" selection-start-column="41" selection-end-line="138" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Calculator03#0;class#Calculator03#0" expanded="true" />
-            <element signature="method#calculate#0;class#Calculator03#0" expanded="true" />
-            <element signature="method#compare#0;class#Calculator03#0" expanded="true" />
-            <element signature="method#getResult#0;class#Calculator03#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -592,18 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="initializer##0;class#Calculator04#0" expanded="true" />
-            <element signature="method#cal#0;class#Calculator04#0" expanded="true" />
-            <element signature="method#cacu#0;class#Calculator04#0" expanded="true" />
-            <element signature="e#1335#1392#0" expanded="true" />
-            <element signature="e#4050#4088#0" expanded="true" />
-            <element signature="method#main#0;class#Calculator04#0" expanded="true" />
-            <element signature="e#5979#6033#0" expanded="true" />
-            <element signature="e#6313#6340#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,14 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Calculator05#0" expanded="true" />
-            <element signature="method#DoTimeMul#0;class#Calculator05#0" expanded="true" />
-            <element signature="method#getnum#0;class#Calculator05#0" expanded="true" />
-            <element signature="method#DoCalculation#0;class#Calculator05#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -626,10 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,16 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3651592">
           <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#4740#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Calculator#0" expanded="true" />
-            <element signature="e#561#564#0" expanded="true" />
-            <element signature="e#565#567#0" expanded="true" />
-            <element signature="e#1581#1582#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="method#calculate#0;class#Calculator#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,11 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6331658">
           <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#Calculator01#0" expanded="true" />
-            <element signature="method#main#0;class#Calculator01#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -666,6 +853,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Draft/src/TestPaintComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#558#560#0" expanded="false" />
+            <element signature="e#567#569#0" expanded="false" />
+            <element signature="e#570#572#0" expanded="false" />
+            <element signature="method#paintComponent#0;class#NewPanel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyLine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyOval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30949107">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35075653">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#DrawingBoard#0" expanded="true" />
+            <element signature="e#1022#1030#0" expanded="true" />
+            <element signature="e#1031#1036#0" expanded="true" />
+            <element signature="e#1083#1089#0" expanded="true" />
+            <element signature="e#1090#1095#0" expanded="true" />
+            <element signature="e#1147#1158#0" expanded="true" />
+            <element signature="e#1159#1164#0" expanded="true" />
+            <element signature="e#1211#1220#0" expanded="true" />
+            <element signature="e#1221#1226#0" expanded="true" />
+            <element signature="e#1273#1279#0" expanded="true" />
+            <element signature="e#1280#1285#0" expanded="true" />
+            <element signature="e#1293#1399#0" expanded="true" />
+            <element signature="e#1969#1972#0" expanded="true" />
+            <element signature="e#1973#1976#0" expanded="true" />
+            <element signature="e#2081#2084#0" expanded="true" />
+            <element signature="e#2085#2088#0" expanded="true" />
+            <element signature="e#2119#2122#0" expanded="true" />
+            <element signature="e#2123#2126#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+            <element signature="e#2732#2733#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
+            <element signature="class#3442:3676" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3442:3676" expanded="true" />
+            <element signature="class#3718:4002" expanded="true" />
+            <element signature="method#actionPerformed#0;class#3718:4002" expanded="true" />
+            <element signature="class#4044:4329" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4044:4329" expanded="true" />
+            <element signature="class#4376:4670" expanded="true" />
+            <element signature="method#actionPerformed#0;class#4376:4670" expanded="true" />
+            <element signature="e#5048#5049#0" expanded="true" />
+            <element signature="e#5050#5051#0" expanded="true" />
+            <element signature="e#5052#5053#0" expanded="true" />
+            <element signature="e#5054#5055#0" expanded="true" />
+            <element signature="e#5169#5170#0" expanded="true" />
+            <element signature="e#5758#5763#0" expanded="true" />
+            <element signature="e#6113#6114#0" expanded="true" />
+            <element signature="e#6225#6226#0" expanded="true" />
+            <element signature="e#6269#6270#0" expanded="true" />
+            <element signature="e#6320#6321#0" expanded="true" />
+            <element signature="e#6372#6373#0" expanded="true" />
+            <marker date="1447856900000" expanded="true" signature="2259:2521" placeholder="..." />
+            <marker date="1447856900000" expanded="true" signature="2546:2649" placeholder="..." />
+            <marker date="1447856900000" expanded="true" signature="2683:3148" placeholder="..." />
+            <marker date="1447856900000" expanded="true" signature="3194:5340" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="class#DrawMode#0;class#CanvasPanel#0" expanded="true" />
+            <element signature="class#1045:2480" expanded="true" />
+            <element signature="method#mouseClicked#0;class#1045:2480" expanded="true" />
+            <element signature="method#mousePressed#0;class#1045:2480" expanded="true" />
+            <element signature="e#2207#2208#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="method#mouseEntered#0;class#1045:2480" expanded="true" />
+            <element signature="method#mouseExited#0;class#1045:2480" expanded="true" />
+            <element signature="method#paintComponent#0;class#CanvasPanel#0" expanded="true" />
+            <element signature="method#check_focus#0;class#CanvasPanel#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4951857">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding />
         </state>
       </provider>
