@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaHomework.iml" filepath="$PROJECT_DIR$/JavaHomework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JudgeHomework/JudgeHomework.iml" filepath="$PROJECT_DIR$/JudgeHomework/JudgeHomework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TechSupport/TechSupport.iml" filepath="$PROJECT_DIR$/TechSupport/TechSupport.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSpider/javaSpider_by_zyc.iml" filepath="$PROJECT_DIR$/javaSpider/javaSpider_by_zyc.iml" />
+    </modules>
+  </component>
+</project>
