@@ -209,13 +209,12 @@ public class DrawBoard extends JFrame
                         x1 = e.getX();
                         y1 = e.getY();
 
-                        clickTimes++;
-
                         if(drawMode.equals("select"))
                         {
                             message = "You clicked mouse at ("+x1+","+y1+").";
-                            clickTimes = 0;
                             check_focus();
+
+                            getInputFocus();  // set the Input focus to DrawBoard, not the canvas panel
                         }
                         else if(drawMode.equals("MyText"))
                         {
@@ -228,9 +227,8 @@ public class DrawBoard extends JFrame
                             if(!drawMode.equals("wait"))
                             {
                                 message += "Need Another click to finish the drawing.";
+                                clickTimes++;
                             }
-                            else
-                                clickTimes = 0;
                         }
 
                         display_message();
@@ -459,7 +457,7 @@ public class DrawBoard extends JFrame
                 }
             }
 
-            JOptionPane.showMessageDialog(new JFrame(),"No deletion ", "Dialog", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(new JFrame(),"Nothing to  delete ", "Dialog", JOptionPane.ERROR_MESSAGE);
 
             return false;
         }
@@ -487,6 +485,32 @@ public class DrawBoard extends JFrame
         }
     }
 
+    public class ButtonPanel extends JPanel
+    {
+        JButton button;
+        public ButtonPanel(String text)
+        {
+            this.setBackground(Color.LIGHT_GRAY);
+            button = new JButton(text);
+            this.add(button);
+        }
+    }
+
+    public class RadioButtonPanel extends JPanel
+    {
+        JRadioButton button;
+
+        public RadioButtonPanel(String imgPath,int width,int height)
+        {
+            ImageIcon icon = new ImageIcon(imgPath);
+            Image img = icon.getImage() ;
+            Image newimg = img.getScaledInstance( width, height,  Image.SCALE_SMOOTH ) ;
+            icon = new ImageIcon( newimg );
+            button = new JRadioButton(icon);
+
+            setBackground(Color.white);
+        }
+    }
 
     // memmber variables
 
@@ -502,11 +526,17 @@ public class DrawBoard extends JFrame
 
     JMenuBar menuBar;
     JMenu menuFile;
+    JMenu menuEdit;
     JMenu menuHelp;
     JMenuItem menuFile_new;
     JMenuItem menuFile_open;
     JMenuItem menuFile_save;
     JMenuItem menuFile_quit;
+    JMenuItem menuEdit_select;
+    JMenuItem menuEdit_line;
+    JMenuItem menuEdit_rectangle;
+    JMenuItem menuEdit_oval;
+    JMenuItem menuEdit_text;
     JMenuItem menuHelp_guide;
     JMenuItem menuHelp_about;
 
@@ -517,7 +547,7 @@ public class DrawBoard extends JFrame
     CanvasPanel canvasPanel;
 
     JCheckBox checkFillBox;
-    JButton colorChooser;
+    ButtonPanel colorChooser;
     JComboBox fontNameChooser;
     JComboBox fontSizeChooser;
 
@@ -545,26 +575,53 @@ public class DrawBoard extends JFrame
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    public JRadioButton create_image_radio_button(String imgPath,int width,int height)
+    {
+        JRadioButton button;
+        ImageIcon icon = new ImageIcon(imgPath);
+        Image img = icon.getImage() ;
+        Image newimg = img.getScaledInstance( width, height,  Image.SCALE_SMOOTH ) ;
+        icon = new ImageIcon( newimg );
+        button = new JRadioButton(icon);
+        button.setSize(width,height);
+//        button.setPreferredSize(new Dimension(width,height));
+        button.setBorder(new LineBorder(Color.BLACK,2));
+
+        return button;
+    }
+
     public void init_layout()
     {
         menuBar = new JMenuBar();
         menuFile = new JMenu("File");
+        menuEdit = new JMenu("Edit");
         menuHelp = new JMenu("Help");
         menuFile_new = new JMenuItem("New");
         menuFile_open = new JMenuItem("Open");
         menuFile_save = new JMenuItem("Save");
         menuFile_quit = new JMenuItem("Quit");
+        menuEdit_select = new JMenuItem("Select");
+        menuEdit_line = new JMenuItem("Line");
+        menuEdit_rectangle = new JMenuItem("Rectangle");
+        menuEdit_oval = new JMenuItem("Oval");
+        menuEdit_text = new JMenuItem("Text");
         menuHelp_guide = new JMenuItem("Guide");
-        menuHelp_about = new JMenuItem("Help");
+        menuHelp_about = new JMenuItem("About");
 
         menuFile.add(menuFile_new);
         menuFile.add(menuFile_open);
         menuFile.add(menuFile_save);
         menuFile.add(menuFile_quit);
+        menuEdit.add(menuEdit_select);
+        menuEdit.add(menuEdit_line);
+        menuEdit.add(menuEdit_rectangle);
+        menuEdit.add(menuEdit_oval);
+        menuEdit.add(menuEdit_text);
         menuHelp.add(menuHelp_guide);
         menuHelp.add(menuHelp_about);
 
         menuBar.add(menuFile);
+        menuBar.add(menuEdit);
         menuBar.add(menuHelp);
         setJMenuBar(menuBar);
 
@@ -575,8 +632,9 @@ public class DrawBoard extends JFrame
 
         fontNameChooser = new JComboBox(fontNameSet.toArray());
         fontSizeChooser = new JComboBox(fontSizeSet.toArray());
-        colorChooser = new JButton("Color");
+        colorChooser = new ButtonPanel("Color");
         checkFillBox = new JCheckBox("Fill");
+        colorChooser.setBackground(canvasPanel.get_color());
 
         GridLayout topPanelLayout = new GridLayout(1,0);
         topPanel.setLayout(topPanelLayout);
@@ -585,11 +643,21 @@ public class DrawBoard extends JFrame
         topPanel.add(checkFillBox);
         topPanel.add(colorChooser);
 
-        jrbtLine = new JRadioButton("line");
-        jrbtOval = new JRadioButton("oval");
-        jrbtText = new JRadioButton("text");
-        jrbtRectangle = new JRadioButton("rectangle");
-        jrbtSelect = new JRadioButton("select");
+//        jrbtLine = new JRadioButton("line");
+//        jrbtOval = new JRadioButton("oval");
+//        jrbtText = new JRadioButton("text");
+//        jrbtRectangle = new JRadioButton("rectangle");
+//        jrbtSelect = new JRadioButton("select");
+////        jrbtSelect = new RadioButtonPanel("picture/selectIcon.jpg",20,20);
+//        jrbtLine = new RadioButtonPanel("picture/lineIcon.jpg",20,20);
+//        jrbtRectangle = new RadioButtonPanel("picture/rectangleIcon.jpg",20,20);
+//        jrbtOval = new RadioButtonPanel("picture/ellipseIcon.jpg",20,20);
+        jrbtSelect = create_image_radio_button("DrawingBoard/picture/selectIcon.jpg",20,20);
+        jrbtLine = create_image_radio_button("DrawingBoard/picture/lineIcon.jpg",20,20);
+        jrbtRectangle = create_image_radio_button("DrawingBoard/picture/rectangleIcon.jpg",20,20);
+        jrbtOval = create_image_radio_button("DrawingBoard/picture/ellipseIcon.jpg",20,20);
+        jrbtText = create_image_radio_button("DrawingBoard/picture/textIcon.png",20,20);
+
         ButtonGroup btGroup = new ButtonGroup();
         btGroup.add(jrbtLine);
         btGroup.add(jrbtOval);
@@ -617,8 +685,6 @@ public class DrawBoard extends JFrame
         add(bottomPanel,BorderLayout.SOUTH);
         add(canvasPanel,BorderLayout.CENTER);
 
-
-
     }
 
     public void init_listener()
@@ -634,7 +700,7 @@ public class DrawBoard extends JFrame
                 requestFocus();
                 message = "delete..";
                 display_message();
-                if(e.getKeyCode()==KeyEvent.VK_BACK_SPACE && canvasPanel.get_mode().equals("select"))
+                if( ( e.getKeyCode()==KeyEvent.VK_BACK_SPACE || e.getKeyCode() == KeyEvent.VK_DELETE ) && canvasPanel.get_mode().equals("select"))
                 {
                     if(canvasPanel.get_active_object() == null)
                     {
@@ -781,7 +847,7 @@ public class DrawBoard extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                //todo
+                System.exit(0);
             }
         });
 
@@ -790,7 +856,8 @@ public class DrawBoard extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                //todo
+                String text="See :https://github.com/Zieng/javaHomework";
+                JOptionPane.showMessageDialog(null,text);
             }
         });
 
@@ -799,7 +866,10 @@ public class DrawBoard extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
-                //todo
+                String text="Developed By Zieng\n"+
+                        "For more detail, see:https://github.com/Zieng\n"+
+                        "2015.11.19";
+                JOptionPane.showMessageDialog(null,text);
             }
         });
 
@@ -843,17 +913,22 @@ public class DrawBoard extends JFrame
             }
         });
 
-        colorChooser.addActionListener(new ActionListener()
+        colorChooser.button.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 Color c = JColorChooser.showDialog(null, "Choose a Color", null);
+                if (c == null)
+                    return;
                 canvasPanel.set_color(c);
-                message = "You set the color to "+c.toString();
+                message = "You set the color to " + c.toString();
                 display_message();
+                colorChooser.setBackground(c);
+//                colorChooser.setForeground(c);
             }
         });
+
 
         jrbtSelect.addActionListener(new ActionListener()
         {
@@ -912,6 +987,11 @@ public class DrawBoard extends JFrame
         });
 
 
+    }
+
+    public void getInputFocus()
+    {
+        requestFocus();
     }
 
     public void display_message()
