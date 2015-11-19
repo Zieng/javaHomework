@@ -104,6 +104,23 @@ public class DrawBoard extends JFrame
 
             return str;
         }
+
+        public boolean is_selected(int xx,int yy)
+        {
+            int deltaWidth = (int) ( (2-Math.sqrt(2))/4 * width + 0.5  );
+            int deltaHeight = (int) ( (2-Math.sqrt(2))/4 * height +0.5   );
+
+            if(xx >= startX && xx<= startX+ width && yy>=startY && yy<=startY+height)  // inside outer rectangle
+            {
+                if( xx>=startX+deltaWidth && xx<=startX+width-deltaWidth && yy>=startY+deltaHeight && yy<= startY+height-deltaHeight)
+                {
+                    return false;
+                }
+                else
+                    return true;
+            }
+            return false;
+        }
     }
 
     public class MyLine extends DrawObject
