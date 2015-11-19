@@ -1,11 +1,10 @@
 import javax.swing.*;
 import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.awt.event.*;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 
 /**
@@ -190,7 +189,6 @@ public class DrawBoard extends JFrame
         private int x1,y1,x2,y2;
         private int clickTimes;
         DrawObject activeDrawObject;  // the  selected draw object (used when deleting an object)
-        String message;
 
         public CanvasPanel()
         {
@@ -215,15 +213,27 @@ public class DrawBoard extends JFrame
 
                         if(drawMode.equals("select"))
                         {
+                            message = "You clicked mouse at ("+x1+","+y1+").";
                             clickTimes = 0;
                             check_focus();
                         }
-                        else if(drawMode.equals("text"))
+                        else if(drawMode.equals("MyText"))
                         {
+                            message = "You clicked mouse at ("+x1+","+y1+"). Goint to insert a text at this position";
                             create_draw_object();
                         }
+                        else
+                        {
+                            message = "You clicked mouse at ("+x1+","+y1+").";
+                            if(!drawMode.equals("wait"))
+                            {
+                                message += "Need Another click to finish the drawing.";
+                            }
+                            else
+                                clickTimes = 0;
+                        }
 
-                        message = "You clicked mouse at ("+x1+","+y1+").";
+                        display_message();
                     }
                     else if(clickTimes == 1)
                     {
@@ -231,10 +241,11 @@ public class DrawBoard extends JFrame
                         y2 = e.getY();
                         clickTimes = 0;
 
-                        if(drawMode.equals("rectangle") || drawMode.equals("line") || drawMode.equals("oval"))
+                        if(drawMode.equals("MyRectangle") || drawMode.equals("MyLine") || drawMode.equals("MyOval"))
                             create_draw_object();
 
-                        message = "You clicked mouse at ("+x2+","+y2+").";
+                        message = "You clicked mouse at ("+x2+","+y2+"). Drawing is finished. You can start another operation.";
+                        display_message();
                     }
                 }
 
@@ -316,45 +327,47 @@ public class DrawBoard extends JFrame
             message = "Painting items......\n";
 
             Iterator iter = drawObjectArrayList.iterator();
+
             while(iter.hasNext())
             {
-                DrawObject temp = (DrawObject) iter.next();
-                draw( g, temp);
-            }
-        }
+                DrawObject toDraw = (DrawObject) iter.next();
 
-        protected void draw(Graphics g,DrawObject toDraw)
-        {
-            g.setColor(toDraw.color);
+//                draw(g,toDraw);
+                g.setColor(toDraw.color);
 
-            if(toDraw instanceof MyLine)
-            {
-                g.drawLine(toDraw.startX,toDraw.startY,((MyLine) toDraw).endX,((MyLine) toDraw).endY);
-            }
-            else if(toDraw instanceof MyRectangle)
-            {
-                if(((MyRectangle) toDraw).filled)
-                    g.fillRect(toDraw.startX,toDraw.startY,toDraw.width,toDraw.height);
+                if(toDraw instanceof MyLine)
+                {
+                    g.drawLine(toDraw.startX,toDraw.startY,((MyLine) toDraw).endX,((MyLine) toDraw).endY);
+                    message = "You draw a new line";
+                }
+                else if(toDraw instanceof MyRectangle)
+                {
+                    if(((MyRectangle) toDraw).filled)
+                        g.fillRect(toDraw.startX,toDraw.startY,toDraw.width,toDraw.height);
+                    else
+                        g.drawRect(toDraw.startX,toDraw.startY,toDraw.width,toDraw.height);
+                    message = "You draw a new rectangle.";
+                }
+                else if (toDraw instanceof MyOval)
+                {
+                    if(((MyOval) toDraw).filled)
+                        g.fillOval(toDraw.startX, toDraw.startY, toDraw.width, toDraw.height);
+                    else
+                        g.drawOval(toDraw.startX, toDraw.startY, toDraw.width, toDraw.height);
+                    message = "You draw a new ellipse.";
+                }
+                else if(toDraw instanceof MyText)
+                {
+                    g.setFont(((MyText) toDraw).font);
+                    g.drawString(((MyText) toDraw).content,toDraw.startX,toDraw.startY);
+                    message = "You insert a new text.";
+                }
                 else
-                    g.drawRect(toDraw.startX,toDraw.startY,toDraw.width,toDraw.height);
+                {
+                    JOptionPane.showMessageDialog(new JFrame(),"Invalid draw object", "Dialog", JOptionPane.ERROR_MESSAGE);
+                }
+                display_message();
             }
-            else if (toDraw instanceof MyOval)
-            {
-                if(((MyOval) toDraw).filled)
-                    g.fillRect(toDraw.startX,toDraw.startY,toDraw.width,toDraw.height);
-                else
-                    g.drawRect(toDraw.startX,toDraw.startY,toDraw.width,toDraw.height);
-            }
-            else if(toDraw instanceof MyText)
-            {
-                g.setFont(((MyText) toDraw).font);
-                g.drawString(((MyText) toDraw).content,toDraw.startX,toDraw.startY);
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(new JFrame(),"Invalid draw object", "Dialog", JOptionPane.ERROR_MESSAGE);
-            }
-
         }
 
         public boolean add_draw_object(DrawObject toAdd)
@@ -396,6 +409,8 @@ public class DrawBoard extends JFrame
                 y = Math.min(y1,y2);
                 MyOval myOval = new MyOval(x,y,w,h,currentColor,isFill);
                 myOval.filled = isFill;
+
+                drawObjectArrayList.add(myOval);
             }
             else if(drawMode.equals("MyText"))
             {
@@ -409,6 +424,7 @@ public class DrawBoard extends JFrame
 
             }
 
+            message += "create ok";
             System.out.print(message);
 
             repaint();
@@ -421,6 +437,9 @@ public class DrawBoard extends JFrame
                 if(toCheck.is_selected(x1,y1))
                 {
                     activeDrawObject = toCheck;
+                    message = "You select :\n\t"+toCheck.toString();
+                    display_message();
+
                     return ;
                 }
             }
@@ -445,10 +464,26 @@ public class DrawBoard extends JFrame
             return false;
         }
 
+        public DrawObject get_active_object()
+        {
+            return activeDrawObject;
+        }
+
         public void clear_canvas()
         {
             drawObjectArrayList.clear();
             repaint();
+        }
+
+        public String toString()
+        {
+            String str="";
+            Iterator iter = drawObjectArrayList.iterator();
+            while(iter.hasNext())
+            {
+                str += iter.next().toString()+"\n";
+            }
+            return str;
         }
     }
 
@@ -458,7 +493,12 @@ public class DrawBoard extends JFrame
     static GraphicsEnvironment e = GraphicsEnvironment.getLocalGraphicsEnvironment();
     static Font[] allFonts = e.getAllFonts();
     ArrayList<String> fontNameSet;
-    ArrayList<String> fontSizeSet;
+    ArrayList<Integer> fontSizeSet;
+    String currentFontname;
+    int currentFontStyle;
+    int currentFontSize;
+
+    String message;
 
     JMenuBar menuBar;
     JMenu menuFile;
@@ -477,7 +517,7 @@ public class DrawBoard extends JFrame
     CanvasPanel canvasPanel;
 
     JCheckBox checkFillBox;
-    JColorChooser colorChooser;
+    JButton colorChooser;
     JComboBox fontNameChooser;
     JComboBox fontSizeChooser;
 
@@ -489,6 +529,7 @@ public class DrawBoard extends JFrame
     public DrawBoard()
     {
         fontNameSet = new ArrayList<>();
+        fontSizeSet = new ArrayList<>();
         for(Font f:allFonts)
         {
             fontNameSet.add(f.getFontName());
@@ -525,7 +566,7 @@ public class DrawBoard extends JFrame
 
         menuBar.add(menuFile);
         menuBar.add(menuHelp);
-        add(menuBar);
+        setJMenuBar(menuBar);
 
         topPanel = new JPanel();
         leftPanel = new JPanel();
@@ -534,8 +575,8 @@ public class DrawBoard extends JFrame
 
         fontNameChooser = new JComboBox(fontNameSet.toArray());
         fontSizeChooser = new JComboBox(fontSizeSet.toArray());
-        colorChooser = new JColorChooser();
-        checkFillBox = new JCheckBox();
+        colorChooser = new JButton("Color");
+        checkFillBox = new JCheckBox("Fill");
 
         GridLayout topPanelLayout = new GridLayout(1,0);
         topPanel.setLayout(topPanelLayout);
@@ -566,7 +607,7 @@ public class DrawBoard extends JFrame
 
         messageArea = new JTextArea(5,60);
         JScrollPane jScrollPane = new JScrollPane(messageArea);
-        bottomPanel.add(messageArea);
+        bottomPanel.add(jScrollPane);
 
 
         BorderLayout drawBoardLayout = new BorderLayout();
@@ -582,12 +623,43 @@ public class DrawBoard extends JFrame
 
     public void init_listener()
     {
+
+        // add to DrawBoard itself
+        addKeyListener(new KeyAdapter()
+        {
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+//                super.keyPressed(e);
+                requestFocus();
+                message = "delete..";
+                display_message();
+                if(e.getKeyCode()==KeyEvent.VK_BACK_SPACE && canvasPanel.get_mode().equals("select"))
+                {
+                    if(canvasPanel.get_active_object() == null)
+                    {
+                        message = "You need to choose a figure before you confirm to delete it.";
+                        display_message();
+                    }
+                    else
+                    {
+                        message = "You delete the :\n\t"+canvasPanel.get_active_object().toString();
+                        display_message();
+                        canvasPanel.delete_draw_object(canvasPanel.get_active_object());
+                        repaint();
+                    }
+                }
+            }
+        });
+
         menuFile_new.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
             {
                 canvasPanel.clear_canvas();
+                message = "You create a new canvas";
+                display_message();
             }
         });
 
@@ -596,9 +668,267 @@ public class DrawBoard extends JFrame
             @Override
             public void actionPerformed(ActionEvent e)
             {
+                JFileChooser fc = new JFileChooser();
+                int ret = fc.showOpenDialog(null);
+                if(ret == JFileChooser.APPROVE_OPTION )
+                {
+                    try
+                    {
+                        FileReader fr = new FileReader( fc.getSelectedFile() );
+                        BufferedReader bf = new BufferedReader(fr);
+                        message = "You Open the "+fc.getSelectedFile().getAbsolutePath();
+                        String line;
+                        ArrayList<String> list;
+
+                        while((line = bf.readLine()) != null)
+                        {
+                            int x1,y1,x2,y2;
+                            int r,g,b,a;
+                            list = new ArrayList<String>(Arrays.asList(line.split(" ")));
+
+                            r = Integer.parseInt(list.get(1));
+                            g = Integer.parseInt(list.get(2));
+                            b = Integer.parseInt(list.get(3));
+                            a = Integer.parseInt(list.get(4));
+                            Color color = new Color(r,g,b,a);
+
+                            if(line.contains("MyLine"))
+                            {
+                                x1 = Integer.parseInt(list.get(5));
+                                y1 = Integer.parseInt(list.get(6));
+                                x2 = Integer.parseInt(list.get(7));
+                                y2 = Integer.parseInt(list.get(8));
+
+                                MyLine myLine = new MyLine(x1,y1,x2,y2,color);
+                                canvasPanel.add_draw_object(myLine);
+                            }
+                            else if(line.contains("MyRectangle"))
+                            {
+                                x1 = Integer.parseInt(list.get(5));
+                                y1 = Integer.parseInt(list.get(6));
+                                x2 = Integer.parseInt(list.get(7));
+                                y2 = Integer.parseInt(list.get(8));
+                                boolean f = Boolean.parseBoolean(list.get(9));
+
+                                MyRectangle myRectangle = new MyRectangle(x1,y1,x2,y2,color,f);
+                                canvasPanel.add_draw_object(myRectangle);
+                            }
+                            else if(line.contains("MyOval"))
+                            {
+                                x1 = Integer.parseInt(list.get(5));
+                                y1 = Integer.parseInt(list.get(6));
+                                x2 = Integer.parseInt(list.get(7));
+                                y2 = Integer.parseInt(list.get(8));
+                                boolean f = Boolean.parseBoolean(list.get(9));
+
+                                MyOval myOval = new MyOval(x1,y1,x2,y2,color,f);
+                                canvasPanel.add_draw_object(myOval);
+                            }
+                            else if(line.contains("MyText"))
+                            {
+                                x1 = Integer.parseInt(list.get(5));
+                                y1 = Integer.parseInt(list.get(6));
+                                String fontName = list.get(7);
+                                int fontStyle = Integer.parseInt(list.get(8));
+                                int fontSize = Integer.parseInt(list.get(9));
+                                String content = list.get(10);
+                                Font f = new Font(fontName,fontStyle,fontSize);
+
+                                MyText myText = new MyText(x1,y1,color,f,content);
+                                canvasPanel.add_draw_object(myText);
+                            }
+                        }
+                        canvasPanel.repaint();
+
+                    }catch (IOException ex)
+                    {
+                        ex.printStackTrace();
+                    }
+
+                }
+            }
+        });
+
+        menuFile_save.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                JFileChooser chooser = new JFileChooser();
+
+                int retrival = chooser.showSaveDialog(null);
+                if (retrival == JFileChooser.APPROVE_OPTION)
+                {
+                    try
+                    {
+                        FileWriter fw = new FileWriter(chooser.getSelectedFile()+".txt");
+                        fw.write( canvasPanel.toString() );
+                        fw.close();
+                        message = "You save the canvas to "+chooser.getSelectedFile().getAbsolutePath();
+                        display_message();
+                    }
+                    catch (Exception ex)
+                    {
+                        ex.printStackTrace();
+                    }
+                }
 
             }
         });
+
+        menuFile_quit.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                //todo
+            }
+        });
+
+        menuHelp_guide.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                //todo
+            }
+        });
+
+        menuHelp_about.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                //todo
+            }
+        });
+
+        fontNameChooser.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                currentFontname = fontNameSet.get( fontNameChooser.getSelectedIndex());
+                Font f = new Font(currentFontname,currentFontStyle,currentFontSize);
+                canvasPanel.set_font(f);
+                message = "You set the font to "+f.toString();
+                display_message();
+            }
+        });
+
+        fontSizeChooser.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                currentFontSize = fontSizeSet.get(fontSizeChooser.getSelectedIndex());
+                Font f = new Font(currentFontname,currentFontStyle,currentFontSize);
+                canvasPanel.set_font(f);
+                message = "You set the font to "+f.toString();
+                display_message();
+            }
+        });
+
+        checkFillBox.addItemListener(new ItemListener()
+        {
+            @Override
+            public void itemStateChanged(ItemEvent e)
+            {
+                if ( e.getStateChange() == ItemEvent.SELECTED)
+                    canvasPanel.set_fill(true);
+                else
+                    canvasPanel.set_fill(false);
+                message = "You change the fill option from "+!canvasPanel.get_fill_state()+" to "+canvasPanel.get_fill_state();
+                display_message();
+            }
+        });
+
+        colorChooser.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                Color c = JColorChooser.showDialog(null, "Choose a Color", null);
+                canvasPanel.set_color(c);
+                message = "You set the color to "+c.toString();
+                display_message();
+            }
+        });
+
+        jrbtSelect.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                canvasPanel.set_mode("select");
+                message = "Ready to select an object";
+                display_message();
+                requestFocus();
+            }
+        });
+
+        jrbtLine.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                canvasPanel.set_mode("MyLine");
+                message = "Ready to draw a line";
+                display_message();
+            }
+        });
+
+        jrbtRectangle.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                canvasPanel.set_mode("MyRectangle");
+                message = "Ready to draw a rectangle";
+                display_message();
+            }
+        });
+
+        jrbtOval.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                canvasPanel.set_mode("MyOval");
+                message = "Ready to draw an oval";
+                display_message();
+            }
+        });
+
+        jrbtText.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                canvasPanel.set_mode("MyText");
+                message = "Ready to insert a text";
+                display_message();
+            }
+        });
+
+
     }
 
+    public void display_message()
+    {
+        messageArea.append(message+"\n");
+    }
+
+
+
+
+
+
+    public static void main(String [] args)
+    {
+        DrawBoard db = new DrawBoard();
+        db.setVisible(true);
+        db.setLocationRelativeTo(null);
+        db.setSize(800,800);
+    }
 }

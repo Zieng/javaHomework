@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d85c5c-8d0e-4620-ada8-1194e00517a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Draft/Draft.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/DrawingBoard.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyLine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyOval.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyRectangle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/MyText.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Draft/src/TestPaintComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/CanvasPanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/CanvasPanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/CanvasPanel$DrawMode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/CanvasPanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawingBoard$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawingBoard$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawingBoard$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawingBoard$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawingBoard$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawingBoard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/MyLine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/MyOval.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/MyRectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/MyText.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/TestCanvasPanel.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java" afterPath="$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaHomework.iws" />
@@ -36,98 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DrawingBoard.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java">
+      <file leaf-file-name="DrawBoard.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#DrawingBoard#0" expanded="true" />
-                <element signature="e#1022#1030#0" expanded="true" />
-                <element signature="e#1031#1036#0" expanded="true" />
-                <element signature="e#1083#1089#0" expanded="true" />
-                <element signature="e#1090#1095#0" expanded="true" />
-                <element signature="e#1147#1158#0" expanded="true" />
-                <element signature="e#1159#1164#0" expanded="true" />
-                <element signature="e#1211#1220#0" expanded="true" />
-                <element signature="e#1221#1226#0" expanded="true" />
-                <element signature="e#1273#1279#0" expanded="true" />
-                <element signature="e#1280#1285#0" expanded="true" />
-                <element signature="e#1293#1399#0" expanded="true" />
-                <element signature="e#1969#1972#0" expanded="true" />
-                <element signature="e#1973#1976#0" expanded="true" />
-                <element signature="e#2081#2084#0" expanded="true" />
-                <element signature="e#2085#2088#0" expanded="true" />
-                <element signature="e#2119#2122#0" expanded="true" />
-                <element signature="e#2123#2126#0" expanded="true" />
-                <element signature="e#2233#2234#0" expanded="true" />
-                <element signature="e#2732#2733#0" expanded="true" />
-                <element signature="e#2734#2735#0" expanded="true" />
-                <element signature="class#3442:3676" expanded="true" />
-                <element signature="method#actionPerformed#0;class#3442:3676" expanded="true" />
-                <element signature="class#3718:4002" expanded="true" />
-                <element signature="method#actionPerformed#0;class#3718:4002" expanded="true" />
-                <element signature="class#4044:4329" expanded="true" />
-                <element signature="method#actionPerformed#0;class#4044:4329" expanded="true" />
-                <element signature="class#4376:4670" expanded="true" />
-                <element signature="method#actionPerformed#0;class#4376:4670" expanded="true" />
-                <element signature="e#5048#5049#0" expanded="true" />
-                <element signature="e#5050#5051#0" expanded="true" />
-                <element signature="e#5052#5053#0" expanded="true" />
-                <element signature="e#5054#5055#0" expanded="true" />
-                <element signature="e#5169#5170#0" expanded="true" />
-                <element signature="e#5758#5763#0" expanded="true" />
-                <element signature="e#6113#6114#0" expanded="true" />
-                <element signature="e#6225#6226#0" expanded="true" />
-                <element signature="e#6269#6270#0" expanded="true" />
-                <element signature="e#6320#6321#0" expanded="true" />
-                <element signature="e#6372#6373#0" expanded="true" />
-                <marker date="1447856900000" expanded="true" signature="2259:2521" placeholder="..." />
-                <marker date="1447856900000" expanded="true" signature="2546:2649" placeholder="..." />
-                <marker date="1447856900000" expanded="true" signature="2683:3148" placeholder="..." />
-                <marker date="1447856900000" expanded="true" signature="3194:5340" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanvasPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-              <folding>
-                <element signature="class#DrawMode#0;class#CanvasPanel#0" expanded="true" />
-                <element signature="class#1045:2480" expanded="true" />
-                <element signature="method#mouseClicked#0;class#1045:2480" expanded="true" />
-                <element signature="method#mousePressed#0;class#1045:2480" expanded="true" />
-                <element signature="e#2207#2208#0" expanded="true" />
-                <element signature="e#2264#2265#0" expanded="true" />
-                <element signature="method#mouseEntered#0;class#1045:2480" expanded="true" />
-                <element signature="method#mouseExited#0;class#1045:2480" expanded="true" />
-                <element signature="method#paintComponent#0;class#CanvasPanel#0" expanded="true" />
-                <element signature="method#check_focus#0;class#CanvasPanel#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestCanvasPanel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4951857">
-              <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyText.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyText.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.61013645">
+              <caret line="865" column="31" selection-start-line="865" selection-start-column="31" selection-end-line="865" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -164,13 +82,14 @@
         <option value="$PROJECT_DIR$/JudgeHomework/src/Calculator05.java" />
         <option value="$PROJECT_DIR$/Calculator/src/Calculator.java" />
         <option value="$PROJECT_DIR$/Draft/src/TestPaintComponent.java" />
-        <option value="$PROJECT_DIR$/DrawingBoard/src/MyText.java" />
-        <option value="$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java" />
-        <option value="$PROJECT_DIR$/DrawingBoard/src/MyLine.java" />
         <option value="$PROJECT_DIR$/DrawingBoard/src/MyRectangle.java" />
-        <option value="$PROJECT_DIR$/DrawingBoard/src/MyOval.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyText.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyLine.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java" />
         <option value="$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/MyOval.java" />
         <option value="$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java" />
+        <option value="$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java" />
       </list>
     </option>
   </component>
@@ -215,6 +134,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -303,9 +223,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,8 +233,10 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
-  <component name="RunManager" selected="Application.TestCanvasPanel">
+  <component name="RunManager" selected="Application.DrawBoard">
     <configuration default="false" name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Calculator" />
@@ -373,6 +294,21 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Draft" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DrawBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="DrawBoard" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DrawingBoard" />
       <envs />
       <method />
     </configuration>
@@ -538,19 +474,21 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.TestCanvasPanel" />
       <item index="1" class="java.lang.String" itemvalue="Application.Calculator" />
       <item index="2" class="java.lang.String" itemvalue="Application.Calculator (1)" />
       <item index="3" class="java.lang.String" itemvalue="Application.DrawingBoard" />
       <item index="4" class="java.lang.String" itemvalue="Application.TestPaintComponent" />
+      <item index="5" class="java.lang.String" itemvalue="Application.DrawBoard" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.DrawingBoard" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestPaintComponent" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Calculator (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Calculator" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.DrawBoard" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DrawingBoard" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestPaintComponent" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Calculator (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -576,9 +514,8 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15934066" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27604726" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18904404" sideWeight="0.509768" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -588,12 +525,13 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24053724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18904404" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4189044" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -612,13 +550,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760474" sideWeight="0.495116" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24053724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18904404" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -634,7 +572,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -643,76 +581,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java">
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#DrawingBoard#0" expanded="true" />
-            <element signature="e#1022#1030#0" expanded="true" />
-            <element signature="e#1031#1036#0" expanded="true" />
-            <element signature="e#1083#1089#0" expanded="true" />
-            <element signature="e#1090#1095#0" expanded="true" />
-            <element signature="e#1147#1158#0" expanded="true" />
-            <element signature="e#1159#1164#0" expanded="true" />
-            <element signature="e#1211#1220#0" expanded="true" />
-            <element signature="e#1221#1226#0" expanded="true" />
-            <element signature="e#1273#1279#0" expanded="true" />
-            <element signature="e#1280#1285#0" expanded="true" />
-            <element signature="e#1293#1399#0" expanded="true" />
-            <element signature="e#1969#1972#0" expanded="true" />
-            <element signature="e#1973#1976#0" expanded="true" />
-            <element signature="e#2081#2084#0" expanded="true" />
-            <element signature="e#2085#2088#0" expanded="true" />
-            <element signature="e#2119#2122#0" expanded="true" />
-            <element signature="e#2123#2126#0" expanded="true" />
-            <element signature="e#2233#2234#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="class#3442:3676" expanded="true" />
-            <element signature="method#actionPerformed#0;class#3442:3676" expanded="true" />
-            <element signature="class#3718:4002" expanded="true" />
-            <element signature="method#actionPerformed#0;class#3718:4002" expanded="true" />
-            <element signature="class#4044:4329" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4044:4329" expanded="true" />
-            <element signature="class#4376:4670" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4376:4670" expanded="true" />
-            <element signature="e#5048#5049#0" expanded="true" />
-            <element signature="e#5050#5051#0" expanded="true" />
-            <element signature="e#5052#5053#0" expanded="true" />
-            <element signature="e#5054#5055#0" expanded="true" />
-            <element signature="e#5169#5170#0" expanded="true" />
-            <element signature="e#5758#5763#0" expanded="true" />
-            <element signature="e#6113#6114#0" expanded="true" />
-            <element signature="e#6225#6226#0" expanded="true" />
-            <element signature="e#6269#6270#0" expanded="true" />
-            <element signature="e#6320#6321#0" expanded="true" />
-            <element signature="e#6372#6373#0" expanded="true" />
-            <marker date="1447856900000" expanded="true" signature="2259:2521" placeholder="..." />
-            <marker date="1447856900000" expanded="true" signature="2546:2649" placeholder="..." />
-            <marker date="1447856900000" expanded="true" signature="2683:3148" placeholder="..." />
-            <marker date="1447856900000" expanded="true" signature="3194:5340" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="class#DrawMode#0;class#CanvasPanel#0" expanded="true" />
-            <element signature="class#1045:2480" expanded="true" />
-            <element signature="method#mouseClicked#0;class#1045:2480" expanded="true" />
-            <element signature="method#mousePressed#0;class#1045:2480" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="method#mouseEntered#0;class#1045:2480" expanded="true" />
-            <element signature="method#mouseExited#0;class#1045:2480" expanded="true" />
-            <element signature="method#paintComponent#0;class#CanvasPanel#0" expanded="true" />
-            <element signature="method#check_focus#0;class#CanvasPanel#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -720,13 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#558#560#0" expanded="false" />
-            <element signature="e#567#569#0" expanded="false" />
-            <element signature="e#570#572#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#NewPanel#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,125 +726,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#558#560#0" expanded="false" />
-            <element signature="e#567#569#0" expanded="false" />
-            <element signature="e#570#572#0" expanded="false" />
-            <element signature="method#paintComponent#0;class#NewPanel#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyLine.java">
+    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyOval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30949107">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyRectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35075653">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawingBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="12" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#DrawingBoard#0" expanded="true" />
-            <element signature="e#1022#1030#0" expanded="true" />
-            <element signature="e#1031#1036#0" expanded="true" />
-            <element signature="e#1083#1089#0" expanded="true" />
-            <element signature="e#1090#1095#0" expanded="true" />
-            <element signature="e#1147#1158#0" expanded="true" />
-            <element signature="e#1159#1164#0" expanded="true" />
-            <element signature="e#1211#1220#0" expanded="true" />
-            <element signature="e#1221#1226#0" expanded="true" />
-            <element signature="e#1273#1279#0" expanded="true" />
-            <element signature="e#1280#1285#0" expanded="true" />
-            <element signature="e#1293#1399#0" expanded="true" />
-            <element signature="e#1969#1972#0" expanded="true" />
-            <element signature="e#1973#1976#0" expanded="true" />
-            <element signature="e#2081#2084#0" expanded="true" />
-            <element signature="e#2085#2088#0" expanded="true" />
-            <element signature="e#2119#2122#0" expanded="true" />
-            <element signature="e#2123#2126#0" expanded="true" />
-            <element signature="e#2233#2234#0" expanded="true" />
-            <element signature="e#2732#2733#0" expanded="true" />
-            <element signature="e#2734#2735#0" expanded="true" />
-            <element signature="class#3442:3676" expanded="true" />
-            <element signature="method#actionPerformed#0;class#3442:3676" expanded="true" />
-            <element signature="class#3718:4002" expanded="true" />
-            <element signature="method#actionPerformed#0;class#3718:4002" expanded="true" />
-            <element signature="class#4044:4329" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4044:4329" expanded="true" />
-            <element signature="class#4376:4670" expanded="true" />
-            <element signature="method#actionPerformed#0;class#4376:4670" expanded="true" />
-            <element signature="e#5048#5049#0" expanded="true" />
-            <element signature="e#5050#5051#0" expanded="true" />
-            <element signature="e#5052#5053#0" expanded="true" />
-            <element signature="e#5054#5055#0" expanded="true" />
-            <element signature="e#5169#5170#0" expanded="true" />
-            <element signature="e#5758#5763#0" expanded="true" />
-            <element signature="e#6113#6114#0" expanded="true" />
-            <element signature="e#6225#6226#0" expanded="true" />
-            <element signature="e#6269#6270#0" expanded="true" />
-            <element signature="e#6320#6321#0" expanded="true" />
-            <element signature="e#6372#6373#0" expanded="true" />
-            <marker date="1447856900000" expanded="true" signature="2259:2521" placeholder="..." />
-            <marker date="1447856900000" expanded="true" signature="2546:2649" placeholder="..." />
-            <marker date="1447856900000" expanded="true" signature="2683:3148" placeholder="..." />
-            <marker date="1447856900000" expanded="true" signature="3194:5340" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/MyText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/CanvasPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="class#DrawMode#0;class#CanvasPanel#0" expanded="true" />
-            <element signature="class#1045:2480" expanded="true" />
-            <element signature="method#mouseClicked#0;class#1045:2480" expanded="true" />
-            <element signature="method#mousePressed#0;class#1045:2480" expanded="true" />
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="method#mouseEntered#0;class#1045:2480" expanded="true" />
-            <element signature="method#mouseExited#0;class#1045:2480" expanded="true" />
-            <element signature="method#paintComponent#0;class#CanvasPanel#0" expanded="true" />
-            <element signature="method#check_focus#0;class#CanvasPanel#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DrawingBoard/src/TestCanvasPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4951857">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.61013645">
+          <caret line="865" column="31" selection-start-line="865" selection-start-column="31" selection-end-line="865" selection-end-column="31" />
           <folding />
         </state>
       </provider>
