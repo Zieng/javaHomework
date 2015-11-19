@@ -11,25 +11,23 @@ public class TestCanvasPanel
 
     public static void main(String [] args)
     {
-        CanvasPanel cp = new CanvasPanel();
+        DrawBoard.CanvasPanel cp = new DrawBoard.CanvasPanel();
         JFrame frame = new JFrame();
         frame.add(cp);
 
-
+        System.out.print(allFonts[0]);
 //        cp.repaint();
-        cp.set_mode(CanvasPanel.DrawMode.text);
-        cp.set_color(Color.black);
-        cp.set_font( allFonts[0]);
+        cp.set_mode("oval");
 
-        MyText myText = new MyText();
-        myText.x = myText.y = 0;
-        myText.content = "test text";
-        myText.color = Color.red;
-        myText.font = allFonts[0];
-        cp.textList.add(myText);
+//        DrawBoard.MyText myText = new DrawBoard.MyText();
+//        myText.x = myText.y = 20;
+//        myText.content = "test text";
+//        myText.color = Color.red;
+//        myText.font = cp.getFont();
+//        cp.textList.add(myText);
 
-        MyOval myOval = new MyOval(10,10,100,100,Color.black);
-        cp.ovalList.add(myOval);
+        DrawBoard.MyOval myOval = new DrawBoard.MyOval(10,10,100,100,Color.black,true);
+//        cp.ovalList.add(myOval);
 
         cp.repaint();
 
