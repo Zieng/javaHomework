@@ -595,7 +595,13 @@ public class DrawBoard extends JFrame
     public JRadioButton create_image_radio_button(String imgPath,int width,int height)
     {
         JRadioButton button;
-        ImageIcon icon = new ImageIcon(imgPath);
+        ImageIcon icon = new ImageIcon(getClass().getResource(imgPath));
+//        ImageIcon icon = new ImageIcon(imgPath);
+        if(icon == null)
+        {
+            System.out.println("image "+imgPath+" not found");
+            return null;
+        }
         Image img = icon.getImage() ;
         Image newimg = img.getScaledInstance( width, height,  Image.SCALE_SMOOTH ) ;
         icon = new ImageIcon( newimg );
@@ -669,11 +675,11 @@ public class DrawBoard extends JFrame
 //        jrbtLine = new RadioButtonPanel("picture/lineIcon.jpg",20,20);
 //        jrbtRectangle = new RadioButtonPanel("picture/rectangleIcon.jpg",20,20);
 //        jrbtOval = new RadioButtonPanel("picture/ellipseIcon.jpg",20,20);
-        jrbtSelect = create_image_radio_button("DrawingBoard/picture/selectIcon.jpg",20,20);
-        jrbtLine = create_image_radio_button("DrawingBoard/picture/lineIcon.jpg",20,20);
-        jrbtRectangle = create_image_radio_button("DrawingBoard/picture/rectangleIcon.jpg",20,20);
-        jrbtOval = create_image_radio_button("DrawingBoard/picture/ellipseIcon.jpg",20,20);
-        jrbtText = create_image_radio_button("DrawingBoard/picture/textIcon.png",20,20);
+        jrbtSelect = create_image_radio_button("/picture/selectIcon.jpg",20,20);
+        jrbtLine = create_image_radio_button("/picture/lineIcon.jpg",20,20);
+        jrbtRectangle = create_image_radio_button("/picture/rectangleIcon.jpg",20,20);
+        jrbtOval = create_image_radio_button("/picture/ellipseIcon.jpg",20,20);
+        jrbtText = create_image_radio_button("/picture/textIcon.png",20,20);
 
         ButtonGroup btGroup = new ButtonGroup();
         btGroup.add(jrbtLine);
