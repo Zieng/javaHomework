@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d85c5c-8d0e-4620-ada8-1194e00517a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/DrawingBoard_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DrawingBoard/src/META-INF/MANIFEST.MF" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DrawingBoard/picture/ellipseIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DrawingBoard/picture/lineIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DrawingBoard/picture/rectangleIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DrawingBoard/picture/selectIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DrawingBoard/picture/textIcon.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$1.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$10.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$11.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$12.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$13.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$14.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$15.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$16.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$2.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$3.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$4.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$5.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$6.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$7.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$8.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$9.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard.class" afterPath="$PROJECT_DIR$/out/production/DrawingBoard/DrawBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java" afterPath="$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/ellipseIcon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/lineIcon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/rectangleIcon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/selectIcon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/textIcon.png" afterPath="" />
     </list>
     <ignored path="JavaHomework.iws" />
     <ignored path=".idea/workspace.xml" />
