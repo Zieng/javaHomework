@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6d85c5c-8d0e-4620-ada8-1194e00517a7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/ellipseIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/lineIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/rectangleIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/selectIcon.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/picture/textIcon.png" afterPath="" />
-    </list>
+    <list default="true" id="a6d85c5c-8d0e-4620-ada8-1194e00517a7" name="Default" comment="" />
     <ignored path="JavaHomework.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,7 +25,7 @@
       <file leaf-file-name="DrawBoard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8796296">
+            <state vertical-scroll-proportion="3.425926">
               <caret line="682" column="0" selection-start-line="682" selection-start-column="0" selection-end-line="682" selection-end-column="0" />
               <folding>
                 <element signature="e#18911#18957#0" expanded="true" />
@@ -466,7 +460,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1935287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27389902" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27389902" sideWeight="0.490232" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.497558" order="1" side_tool="false" content_ui="tabs" />
@@ -726,7 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DrawingBoard/src/DrawBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8796296">
+        <state vertical-scroll-proportion="3.425926">
           <caret line="682" column="0" selection-start-line="682" selection-start-column="0" selection-end-line="682" selection-end-column="0" />
           <folding>
             <element signature="e#18911#18957#0" expanded="true" />
